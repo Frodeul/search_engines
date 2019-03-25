@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="../../static/js/jquery-3.3.1.min.js"></script>
+    <link rel="icon" href="../../static/favicon.ico" type="image/x-icon"/>
+    <link href="../../static/styles/index.css" rel="stylesheet">
+    {% if title %}
+        <title>{{ title }} - Поисковые системы</title>
+    {% else %}20
+        <title>Поисковые системы</title>
+    {% endif %}
+</head>
+<body>
+    {% include 'base/header.html' %}
+    <span id="start"></span>
+    <div class="row">
+        {% if sidebar_items %}
+            {% include 'base/sidebar.html' %}
+        {% endif %}
+        <div class="content {{ add_class }} {{ "with-sidebar" if sidebar_items else "" }}">
+            {% block content %}{% endblock %}
+            <div class="to-start"><a href="#start">В начало</a></div>
+        </div>
+    </div>
+    {% include 'base/footer.html' %}
+
+    <script>
+        const win = $(window);
+        const header = $('.header');
+        win.scroll(function () {
+            const top = win.scrollTop();
+            header.css({
+                'backgroundPosition': '0 ' + (-900 * top / $(document).height()) + 'px',
+            });
+        });
+    </script>
+</body>
+</html>

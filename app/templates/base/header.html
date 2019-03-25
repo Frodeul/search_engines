@@ -1,0 +1,21 @@
+{% set menu_items = [
+    ('Главная', '/index', 'index'),
+    ('История', '/history', 'history'),
+    ('Услуги', '/services', 'services'),
+    ('Принципы работы', '/work', 'work'),
+    ('Список источников', '/sources', 'sources'),
+] %}
+
+<div class="header">
+    <a href="/index"><img class="home" src="../../static/images/home.png" alt="Главная"/></a>
+    <ul>
+        {% for name, href, id in menu_items %}
+            <li>
+                <a {% if id == active_page %} class="active"{% endif %} href={{ href }}>
+                    {{ name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+

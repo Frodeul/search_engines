@@ -1,0 +1,11 @@
+{% macro linked_title_h1(name, index) %}
+    <div class="href" id={{ index }}></div>
+    <h1 class="linked-title">{{ name }} <a href={{ '#' + index if index else '' }}><img
+            src="../../static/images/link.png"></a></h1>
+{% endmacro %}
+
+{% macro linked_title_h2(name, index) %}
+    <div class="href" id={{ index }}></div>
+    <h2 class="linked-title">{{ name }} <a href={{ '#' + index if index else '' }}><img
+            src="../../static/images/link.png"></a></h2>
+{% endmacro %}

@@ -1,0 +1,8 @@
+<div class="sidebar">
+    <h2 class="title">Содержание</h2>
+    {% for name, index in sidebar_items %}
+        <a href={{ '#' + index }}>
+            {{ name }}
+        </a>
+    {% endfor %}
+</div>

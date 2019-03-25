@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'DIN Pro';
+	src: url('../../fonts/DINPro.eot');
+	src: local('DIN Pro'), local('DINPro'),
+		url('../../fonts/DINPro.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/DINPro.woff') format('woff'),
+		url('../../fonts/DINPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DIN Pro';
+	src: url('../../fonts/DINPro-Bold.eot');
+	src: local('DIN Pro Bold'), local('DINPro-Bold'),
+		url('../../fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/DINPro-Bold.woff') format('woff'),
+		url('../../fonts/DINPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DIN Pro';
+	src: url('../../fonts/DINPro-Italic.eot');
+	src: local('DIN Pro Italic'), local('DINPro-Italic'),
+		url('../../fonts/DINPro-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/DINPro-Italic.woff') format('woff'),
+		url('../../fonts/DINPro-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}

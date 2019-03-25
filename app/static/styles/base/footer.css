@@ -1,0 +1,9 @@
+.footer {
+    padding: 54px 48px;
+    flex: 0 0 auto;
+    color: #fff;
+    background-size: contain;
+    background: url('../../images/footer.jpg') fixed;
+    height: var(--footer-height);
+    z-index: 2;
+}

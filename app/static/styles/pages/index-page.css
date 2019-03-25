@@ -1,0 +1,26 @@
+.index-page {
+
+}
+
+.index-page img.search {
+    float: left;
+    width: 200px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+.index-page div.engines-list {
+    clear: left;
+}
+
+.index-page img.loupe {
+    width: 300px;
+}
+
+.index-page h1 {
+    margin-bottom: 5px;
+}
+
+table.market td:not(:first-child) {
+    text-align: right;
+}

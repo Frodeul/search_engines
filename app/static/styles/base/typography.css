@@ -1,0 +1,14 @@
+* {
+    font-family: 'DIN Pro', Georgia, serif;
+}
+
+p, div {
+    font-size: 14px;
+    color: #222;
+    line-height: 1.41;
+}
+
+h1, h2, h4, h5, h6 {
+    color: #092a4b;
+    margin: 0;
+}

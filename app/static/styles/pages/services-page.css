@@ -1,0 +1,16 @@
+.services-page img.engine {
+    height: 250px;
+}
+
+.mapouter {
+    text-align: right;
+    width: 400px;
+    height: 300px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 400px;
+    height: 300px;
+}
