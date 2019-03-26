@@ -11,14 +11,6 @@
     position: fixed;
 }
 
-.header img.home {
-    width: 45px;
-    display: inline-block;
-    float: left;
-    margin-right: 20px;
-    margin-top: 7px;
-}
-
 .header ul {
     list-style-type: none;
     margin: 0;
@@ -45,4 +37,12 @@
 
 .header li a:hover {
     background-color: #056782;
+}
+
+.header .title {
+    display: inline-block;
+    float: left;
+    color: #ffffff;
+    line-height: var(--header-height);
+    margin-right: 48px;
 }
